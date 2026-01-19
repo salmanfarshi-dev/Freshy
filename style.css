@@ -337,13 +337,23 @@ a{
     overflow: hidden;
     position: relative;
 }
-
-
-.seller-section .right-part .first-img img{
+.seller-section .right-part .first-img .hover-img{
     height: 424px;
+    width: 366px;
+     overflow: hidden;
+}
+.seller-section .right-part .first-img img{
+    height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+    transform: origin-center;
 }
+.seller-section .right-part .first-img .hover-img:hover img{
+    transform: scale(1.15);
+}
+
+
 
 .seller-section .right-part .first-img .star{
     display: flex;
@@ -381,5 +391,189 @@ a{
     font-weight: 400;
     font-family: "Poppins", sans-serif ;
     color: #000;
+
+}
+
+@media (max-width: 576px){
+
+
+    /* nav bar  */
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-part{
+        display: none;
+    }
+    .nav-items .button-part a{
+        font-size: 12px;
+    }
+    .banner-part{
+        flex-direction: column;
+    }
+    .text-part h1{
+        font-size: 36px;
+        width: 250px;
+        text-align: center;
+        padding-left: 55px;
+
+    }
+
+    /* banner  */
+
+    .banner{
+        padding-top: 20px;
+    }
+    .banner .container{
+    width: 100%;
+    margin: 0 auto;
+   }
+    .text-part p{
+    font-size: 15px;
+    padding-top: 20px;
+    width: 350px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-left: 15px;
+  }
+  .text-part button{
+    padding: 15px 100px;
+    font-size: 12px;
+    margin-left: 70px;
+  }
+  .image-part img{
+    width: 350px;
+    margin-top: 50px;
+  }
+    /* collaction */
+
+    .collaction .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .collaction .container h2{
+    font-size: 30px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+/* fashion  */
+
+.fashion .main{
+    
+    flex-direction: column;
+}
+.fashion .main .left img{
+    display: none;
+}
+.fashion .main .right{
+    width: 100%;
+    padding-left: 0px;
+}
+
+  .fashion .main .right h2{
+    font-size: 30px;
+    width: 237px;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.fashion .main .right p{
+    font-size: 14px;
+    padding-top: 33px;
+    width: 300px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.fashion .reviews-part{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    bottom: -550px;
+    padding: 30px 0;
+    gap: 20px;
+    
+}
+.fashion .reviews-part .contant{
+    border:none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+.fashion .reviews-part .contant h4{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Podkova", serif;
+
+}
+.fashion .reviews-part .contant p{
+    font-size: 28px;
+    padding-top: 28px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif ;
+
+}
+
+/* seller section */
+
+.seller-section{
+    margin-top: 600px;
+    padding-bottom: 50px;
+
+}
+.seller-section .point{
+    display: none;
+}
+.seller-section .div-part{
+    flex-direction: column;
+
+}
+.seller-section .left-part{
+    width: 90%;
+}
+
+.seller-section .left-part h4{
+    font-size: 34px;
+    width: 237px;
+    margin-left: 40px;
+    text-align: center;
+
+}
+.seller-section .left-part p{
+    font-size: 14px;
+    width: 337px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+.seller-section .left-part a{
+    font-size: 14px;
+    padding: 14px 36px;
+    display: flex;
+    justify-content: center;
+}
+.seller-section .right-part{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+}
+.seller-section .right-part .first-img{
+    width: 350px;
+    height: 551px;
+}
+
+
+
+
+
 
 }
