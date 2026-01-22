@@ -470,13 +470,9 @@ a{
 
 }
 .image-part{
-    width: 100%;
-    text-align: center;
+    display: none;
 }
-.image-part img{
-    width: 250px;
-    margin-top: 20px;
-}
+
 
 
 /* collaction */
